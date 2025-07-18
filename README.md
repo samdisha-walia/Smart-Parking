@@ -88,7 +88,7 @@ jupyter notebook parking-lot-prediction.ipynb
 * Visual prediction examples
 
 ## 📷 Sample Result
-![sample](D:/Smart-Parking/image.png)
+![sample](images/image.png)
 
 
 ## 🌱 Future Enhancements
