@@ -1,6 +1,7 @@
 # 🅿️ Smart Parking Detection System – AI-Powered Parking Occupancy Predictor
 
-A deep learning-based **Smart Parking System** built using **TensorFlow**, **Keras**, and the PKLot dataset. This project detects whether a parking space is **occupied** or **empty** using image classification powered by a Convolutional Neural Network (CNN).
+A deep learning–based **Smart Parking System** built using **TensorFlow**, **Keras**, and the PKLot dataset. This project predicts whether a parking space is **occupied** or **empty** using a CNN-based image classifier — now enhanced with a **real-time video-based detection module** using **OpenCV**, enabling live monitoring through video streams or CCTV feeds.
+
 
 > ⚠️ *This is a demo/portfolio project created for learning and academic purposes. Dataset credits belong to UFPR's PKLot project.*
 
@@ -9,7 +10,8 @@ A deep learning-based **Smart Parking System** built using **TensorFlow**, **Ker
 
 ✅ Uses real-world parking lot images from the PKLot dataset  
 ✅ Binary image classification using a CNN model  
-✅ Image preprocessing, normalization, and augmentation  
+✅ Image preprocessing, normalization, and augmentation
+✅ Real-time parking detection from live video / webcam / CCTV feed 
 ✅ Evaluation with confusion matrix and test accuracy  
 ✅ Clean and modular code via Jupyter Notebook  
 ✅ Future-ready for real-time camera input integration  
@@ -24,6 +26,8 @@ A deep learning-based **Smart Parking System** built using **TensorFlow**, **Ker
 | **Data**      | PKLot Dataset (Segmented)      |
 | **Visualization** | Matplotlib, Seaborn       |
 | **Evaluation**| Scikit-learn                   |
+| **Real-time Inference** | OpenCV + Trained CNN Model |
+
 
 
 ## 📁 Project Structure
@@ -34,6 +38,7 @@ smart-parking/
 ├── PKLotSegmented/         # Segmented parking spots (used for training)
 ├── PklotInfo.pdf           # Dataset description and methodology
 ├── parking-lot-prediction.ipynb  # Model development notebook
+├── frontend                   # React based frontend
 ├── README.md               # Project documentation
 └── requirements.txt        # Dependencies (to be generated)
 ````
@@ -55,7 +60,7 @@ smart-parking/
 git clone https://github.com/samdisha-walia/Smart-Parking.git
 
 # Navigate into the project folder
-cd smart-parking-system
+cd smart-parking
 
 # (Optional) Create and activate a virtual environment
 python -m venv venv
