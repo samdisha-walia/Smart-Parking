@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SimpleNav from "../components/SimpleNav";
 
 export default function Parking() {
   const [slots] = useState([
@@ -39,7 +40,9 @@ export default function Parking() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4">
+    <>
+      <SimpleNav />
+      <div className="min-h-screen bg-gray-100 py-12 px-4">
       <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
         Parking Lot Overview
       </h2>
@@ -212,5 +215,6 @@ export default function Parking() {
   </div>
 </motion.div>
     </div>
+    </>
   );
 }

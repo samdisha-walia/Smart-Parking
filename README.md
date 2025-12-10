@@ -2,6 +2,7 @@
 
 A deep learning–based **Smart Parking System** built using **TensorFlow**, **Keras**, and the PKLot dataset. This project predicts whether a parking space is **occupied** or **empty** using a CNN-based image classifier — now enhanced with a **real-time video-based detection module** using **OpenCV**, enabling live monitoring through video streams or CCTV feeds.
 
+In the upgraded version, the system also introduces EV-specific slot booking, multi-level parking visualizations, and a complete full-stack application using FastAPI, MongoDB, and React (Vite) for real-world deployment.
 
 > ⚠️ *This is a demo/portfolio project created for learning and academic purposes. Dataset credits belong to UFPR's PKLot project.*
 
@@ -11,11 +12,12 @@ A deep learning–based **Smart Parking System** built using **TensorFlow**, **K
 ✅ Uses real-world parking lot images from the PKLot dataset  
 ✅ Binary image classification using a CNN model  
 ✅ Image preprocessing, normalization, and augmentation
-✅ Real-time parking detection from live video / webcam / CCTV feed 
+✅ Real-time parking detection from live video / webcam / CCTV feed
+✅ EV-only parking slot support & priority reservation
+✅ Multi-level parking (floor-wise) visualization support
 ✅ Evaluation with confusion matrix and test accuracy  
 ✅ Clean and modular code via Jupyter Notebook  
-✅ Future-ready for real-time camera input integration  
-
+✅ Full-stack extension using React + FastAPI + MongoDB
 
 ## 🛠 Tech Stack
 
@@ -24,7 +26,9 @@ A deep learning–based **Smart Parking System** built using **TensorFlow**, **K
 | **Modeling**  | TensorFlow, Keras              |
 | **Scripting** | Python, Jupyter Notebook       |
 | **Data**      | PKLot Dataset (Segmented)      |
-| **Visualization** | Matplotlib, Seaborn       |
+| **Backend**      | FastAPI, MongoDB      |
+| **Frontend** | React (Vite), Tailwind CSS       |
+| **Visualization** | Matplotlib      |
 | **Evaluation**| Scikit-learn                   |
 | **Real-time Inference** | OpenCV + Trained CNN Model |
 
@@ -38,7 +42,8 @@ smart-parking/
 ├── PKLotSegmented/         # Segmented parking spots (used for training)
 ├── PklotInfo.pdf           # Dataset description and methodology
 ├── parking-lot-prediction.ipynb  # Model development notebook
-├── frontend                   # React based frontend
+├── backend/                      # FastAPI backend for real-time API
+├── frontend/                     # React (Vite) frontend for smart parking UI
 ├── README.md               # Project documentation
 └── requirements.txt        # Dependencies (to be generated)
 ````
@@ -52,6 +57,8 @@ smart-parking/
 * Python 3.7+
 * Jupyter Notebook
 * pip (Python package manager)
+* Node.js & npm (for frontend)
+* MongoDB
 
 ### Installation Steps
 
@@ -98,7 +105,6 @@ jupyter notebook parking-lot-prediction.ipynb
 
 ## 🌱 Future Enhancements
 
-* 📹 Real-time detection using OpenCV and live camera input
 * ☁️ Deploy the model with Flask or FastAPI
 * 📦 Create Docker image for easier deployment
 * 📱 Build a mobile/web dashboard to show parking availability

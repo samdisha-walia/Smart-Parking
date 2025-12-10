@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "name": "Initial Admin",
+      "email": "samdisha2003ahluwalia@gmail.com",
+      "password": "123456789Abcd",
+      "role": "admin"
+    }
+  ]
+}

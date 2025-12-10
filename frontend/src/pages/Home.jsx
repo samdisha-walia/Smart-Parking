@@ -1,10 +1,13 @@
 import { CarFront } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import SimpleNav from "../components/SimpleNav";
 
 export default function Home() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center overflow-hidden">
+    <>
+      <SimpleNav />
+      <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center overflow-hidden">
       {/* 🌈 Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-emerald-900 to-black animate-gradient-move"></div>
 
@@ -74,5 +77,6 @@ export default function Home() {
         </motion.div>
       </motion.div>
     </section>
+    </>
   );
 }
