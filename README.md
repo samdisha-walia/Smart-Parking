@@ -12,10 +12,15 @@ In the upgraded version, the system also introduces EV-specific slot booking, mu
 ✅ Uses real-world parking lot images from the PKLot dataset  
 ✅ Binary image classification using a CNN model  
 ✅ Image preprocessing, normalization, and augmentation
+
 ✅ Real-time parking detection from live video / webcam / CCTV feed
+
 ✅ EV-only parking slot support & priority reservation
+
 ✅ Multi-level parking (floor-wise) visualization support
+
 ✅ Evaluation with confusion matrix and test accuracy  
+
 ✅ Clean and modular code via Jupyter Notebook  
 ✅ Full-stack extension using React + FastAPI + MongoDB
 
